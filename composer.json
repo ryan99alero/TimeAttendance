@@ -1,15 +1,20 @@
 {
-    "name": "agungsugiarto/boilerplate",
-    "description": "CodeIgniter4 Boilerplate based on AdminLTE 3 with user management, roles, permissions, ...",
+    "name": "ryan99alero/timeattendance",
+    "description": "Fork of CodeIgniter4 Boilerplate based on AdminLTE 3 with user management, roles, permissions, and more.",
     "keywords": [
         "codeigniter4",
         "authentication",
         "authorization",
-        "boilerplate"
+        "boilerplate",
+        "timeattendance"
     ],
     "type": "library",
     "license": "MIT",
     "authors": [
+        {
+            "name": "Ryan Goff",
+            "email": "your-email@example.com"
+        },
         {
             "name": "Agung Sugiarto",
             "email": "me.agungsugiarto@gmail.com"
@@ -19,7 +24,7 @@
         "php": "^7.3 || ^8.0",
         "myth/auth": "^1.0",
         "codeigniter4/framework": "^4.1",
-        "codeigniter4/translations" : "^4.0"
+        "codeigniter4/translations": "^4.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.1",
@@ -29,17 +34,16 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "agungsugiarto\\boilerplate\\": "src"
+            "ryan99alero\\timeattendance\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
         }
-    },
-    "scripts": {
+    },    "scripts": {
         "post-update-cmd": [
-          "@composer dump-autoload"
+            "@composer dump-autoload"
         ],
         "test": "phpunit --colors=always -vvv"
     }
